@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+
 using Vidly.ViewModels;
 
 namespace Vidly.Controllers
@@ -56,6 +55,7 @@ namespace Vidly.Controllers
             
             return View(movie);
         }
+       
 
         /*[Route("Customer/Details/{id}")]
         public ActionResult Details(int id)
@@ -66,7 +66,7 @@ namespace Vidly.Controllers
 
             return View(customer);
         }*/
-
+        [Route("movies/index/")]
         public ActionResult Index()
         {
             //get data (hardcoded)
